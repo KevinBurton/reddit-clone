@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { SidebarComponent } from './sidebar.component';
+import { ArticleListHeaderComponent } from './article-list-header.component';
 
-describe('Component: Sidebar', () => {
+describe('Component: ArticleListHeader', () => {
   it('should create an instance', () => {
-    let component = new SidebarComponent();
+    let component = new ArticleListHeaderComponent();
     expect(component).toBeTruthy();
   });
 });
