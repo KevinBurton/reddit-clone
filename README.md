@@ -21,6 +21,16 @@ If all looks good in the pre-deployment (above) then you can push it to github p
 git subtree push --prefix dist/ origin gh-pages
 Go to the repository and got to the branch. Click on the settings button and go down to GitHub Pages.
 
+As an example, the current ng github-pages:deploy does the following:
+
+creates GitHub repo for the current project if one doesn't exist
+rebuilds the app at the current HEAD
+creates a local gh-pages branch if one doesn't exist
+moves your app to the gh-pages branch and creates a commit
+edit the base tag in index.html to support github pages
+pushes the gh-pages branch to github
+returns back to the original HEAD
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
