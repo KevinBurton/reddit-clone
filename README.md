@@ -14,7 +14,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 'ng build --env prod' or 'ng build --prod'
 'ng build --prod --base-href /' now you can go into the dist folder and test with another browser like
-(cd dist && python -m SimleHTTPServer 8080)
+(cd dist && python -m SimpleHTTPServer 8080)
+or
+(cd dist && python -m http.server 8080)
 If all looks good in the pre-deployment (above) then you can push it to github pages
 git subtree push --prefix dist/ origin gh-pages
 Go to the repository and got to the branch. Click on the settings button and go down to GitHub Pages.
