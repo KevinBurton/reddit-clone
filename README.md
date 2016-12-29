@@ -17,6 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 (cd dist && python -m SimleHTTPServer 8080)
 If all looks good in the pre-deployment (above) then you can push it to github pages
 git subtree push --prefix dist/ origin gh-pages
+Go to the repository and got to the branch. Click on the settings button and go down to GitHub Pages.
 
 ## Running unit tests
 
