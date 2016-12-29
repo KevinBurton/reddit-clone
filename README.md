@@ -28,7 +28,7 @@ If all looks good in the pre-deployment (above) then you can push it to github p
 
 Go to the repository and got to the branch. Click on the settings button and go down to GitHub Pages.
 
-As an example, the current ng github-pages:deploy does the following:
+As an example, the current `ng github-pages:deploy` does the following:
 
 * creates GitHub repo for the current project if one doesn't exist
 * rebuilds the app at the current HEAD
