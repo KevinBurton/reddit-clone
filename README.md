@@ -12,24 +12,31 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-'ng build --env prod' or 'ng build --prod'
-'ng build --prod --base-href /' now you can go into the dist folder and test with another browser like
-(cd dist && python -m SimpleHTTPServer 8080)
+`ng build --env prod` or `ng build --prod`
+
+`ng build --prod --base-href /` now you can go into the dist folder and test with another browser like
+
+`(cd dist && python -m SimpleHTTPServer 8080)`
+
 or
-(cd dist && python -m http.server 8080)
+
+`(cd dist && python -m http.server 8080)`
+
 If all looks good in the pre-deployment (above) then you can push it to github pages
-git subtree push --prefix dist/ origin gh-pages
+
+`git subtree push --prefix dist/ origin gh-pages`
+
 Go to the repository and got to the branch. Click on the settings button and go down to GitHub Pages.
 
 As an example, the current ng github-pages:deploy does the following:
 
-creates GitHub repo for the current project if one doesn't exist
-rebuilds the app at the current HEAD
-creates a local gh-pages branch if one doesn't exist
-moves your app to the gh-pages branch and creates a commit
-edit the base tag in index.html to support github pages
-pushes the gh-pages branch to github
-returns back to the original HEAD
+* creates GitHub repo for the current project if one doesn't exist
+* rebuilds the app at the current HEAD
+* creates a local gh-pages branch if one doesn't exist
+* moves your app to the gh-pages branch and creates a commit
+* edit the base tag in index.html to support github pages
+* pushes the gh-pages branch to github
+* returns back to the original HEAD
 
 ## Running unit tests
 
